@@ -7,6 +7,11 @@ def C(x, y):
     a, b, c = Factorial(x), Factorial(y), Factorial(x-y)
 
     return int(a / (b * c))
+'''
+t(b, n, k) 指的是在n個stack中，至少有一個stack裡面有k個robots的分法。
+因此，要計算一個stack有k個robots、兩個stack有k個robots、三個stack有k個robots......
+的總和次數
+'''
 
 def t(b, n, k):
     i, j = 1, 0
